@@ -53,7 +53,7 @@ const Syllabus = () => {
                     <td>Computer Programming [CT 401]</td>
                     <td>Electric Circuit And Machines</td>
                   </tr>
-                  {/* Add more rows as needed */}
+            
                 </tbody>
               </SyllabusTable>
             );
@@ -91,7 +91,7 @@ const Syllabus = () => {
                     <td>Electromagnetics [EX 503]</td>
                     <td></td>
                   </tr>
-                  {/* Add more rows as needed */}
+                
                 </tbody>
               </SyllabusTable>
             );
@@ -125,7 +125,7 @@ const Syllabus = () => {
                     <td>Computer Networks[CT 657]</td>
                     <td>Communication System I [EX 652]</td>
                   </tr>
-                  {/* Add more rows as needed */}
+                
                 </tbody>
               </SyllabusTable>
             );
@@ -171,7 +171,7 @@ const Syllabus = () => {
                 </tbody>
               </SyllabusTable>
             );
-          // Add cases for other years if necessary
+          
           default:
             return null;
         }
@@ -212,7 +212,7 @@ const Syllabus = () => {
                     <td>Computer Programming [CT 401]</td>
                     <td></td>
                   </tr>
-                  {/* Add more rows as needed */}
+            
                 </tbody>
               </SyllabusTable>
             );
@@ -293,7 +293,7 @@ const Syllabus = () => {
                     <td>Data Communication [CT 602]</td>
                     <td></td>
                   </tr>
-                  {/* Add more rows as needed */}
+                
                 </tbody>
               </SyllabusTable>
             );
@@ -334,7 +334,7 @@ const Syllabus = () => {
                 </tbody>
               </SyllabusTable>
             );
-          // Add cases for other years if necessary
+          
           default:
             return null;
         }

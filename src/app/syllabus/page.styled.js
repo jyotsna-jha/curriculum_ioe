@@ -32,31 +32,53 @@ export const NavigationButton = styled.button`
   font-weight: bold;
   padding: 10px 40px;
   margin-right: 10px;
-  border-radius:5px;
+  margin-left: 25px;
+  border-radius: 5px;
 `;
 
 export const Heading = styled.h1`
-  margin-left: 28px;
+  margin-left: 25px;
   font-family: sans-serif;
   display: flex;
   align-items: center;
+  color: #333333;
+  position: relative;
+
+  /* Add border styles for large screen devices */
+  &::before {
+    content: "";
+    position: absolute;
+    margin-left: 5px;
+    top: 50%;
+    left: calc(9% - 1px); /* Adjust the value to position the border closer or farther from the heading */
+    transform: translateY(-50%);
+    height: 100%; /* Adjust the height to control the length of the border line */
+    width: 4px; /* Adjust the width to control the thickness of the border line */
+    background-color: #7177FF;
+  }
+
+  @media (max-width: 768px) {
+    /* Hide border for small screen devices */
+    &::before {
+      display: none;
+    }
+  }
 `;
 
 export const Dropdown = styled.select`
-  margin-left: 10px;
+  margin-left: 20px;
   padding: 4px 8px;
   font-size: 14px;
   border-radius: 5px;
   border: 1px solid #ffff;
   color: #ffff;
   background-color: #7177FF;
-  ;
   outline: none;
   cursor: pointer;
 
   &:hover {
-    background-color:#fff;
-    color:#7177FF;
+    background-color: #fff;
+    color: #7177FF;
   }
 
   &:focus {
